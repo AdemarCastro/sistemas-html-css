@@ -1,0 +1,156 @@
+/* Importação de fontes */
+/* Importa a fonte Oswald do Google Fonts com todos os estilos */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+/* Importa a fonte Oswald do Google Fonts com o peso de 600 (negrito) */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+/* Definição das variáveis de cor */
+/* Define as variáveis de cor usadas na página com seus respectivos valores */
+:root {
+  --cor-primaria: #14141c;
+  --cor-secundaria: #04f823;
+  --cor-branco: #ffffff;
+  --cor-cinza-claro: #7c7c7c;
+  --cor-cinza-escuro: #5a5c5d;
+}
+
+/* Redefinição de estilização da pagina */
+/* Define algumas regras básicas para todos os elementos HTML */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos do cabeçalho */
+header {
+  display: flex; /* Cria um container flexível */
+  justify-content: space-between; /* Alinha os elementos horizontalmente com espaço entre eles */
+  align-items: center; /* Alinha os elementos verticalmente no centro */
+  padding: 20px; /* Adiciona um espaçamento interno de 20px em todas as direções */
+  background-color: var(
+    --cor-primaria
+  ); /* Define a cor de fundo do cabeçalho como a cor primária */
+}
+
+/* Estilos do corpo da página */
+body {
+  font-size: 16px; /* Define o tamanho da fonte do corpo da página como 16 pixels */
+  font-family: "Oswald", Arial, Helvetica, sans-serif; /* Define a família de fontes padrão como Oswald, Arial, Helvetica e sans-serif */
+}
+
+/* Estilos do conteúdo principal */
+main {
+  display: flex; /* Cria um container flexível */
+  flex-direction: column; /* Coloca os elementos um embaixo do outro */
+  align-items: center; /* Centraliza os elementos horizontalmente */
+  min-height: 100vh; /* Define a altura mínima da div principal como a altura total da tela */
+  font-size: 1.5rem; /* Define o tamanho da fonte como 1.5 vezes o tamanho padrão */
+}
+
+/* Estilos da logo */
+.logo img {
+  height: 60px; /* Define a altura da imagem da logo como 60 pixels */
+}
+
+/* Estilos da navegação */
+nav ul {
+  display: flex; /* Cria um container flexível */
+  list-style: none; /* Remove a lista de marcadores dos itens da navegação */
+}
+
+nav li {
+  margin-right: 20px; /* Adiciona um espaçamento interno à direita de cada item da navegação */
+}
+
+nav a {
+  text-decoration: none; /* Remove a decoração de sublinhado do link */
+  color: var(--cor-branco); /* Define a cor do texto como a cor branca */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+}
+
+nav a:hover {
+  color: var(
+    --cor-secundaria
+  ); /* Muda a cor do texto quando o mouse está em cima do link da navegação */
+}
+
+.imagem {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div pai */
+  align-items: center; /* Centraliza verticalmente o conteúdo dentro da div pai */
+  padding-top: 3rem; /* Adiciona um espaço vazio acima da div */
+}
+
+.imagem img {
+  max-height: 50vh; /* Define a altura máxima da imagem como 50% da altura da viewport */
+  max-width: 80vw; /* Define a largura máxima da imagem como 80% da largura da viewport */
+}
+
+#titulo-img {
+  color: var(
+    --cor-branco
+  ); /* Define a cor do texto do elemento com ID 'titulo-img' */
+}
+
+.texto-imagem {
+  position: absolute; /* Define a posição do elemento como absoluta, em relação ao elemento pai mais próximo com posição definida */
+  display: block; /* Faz os elementos filhos ficarem empilhados verticalmente */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div pai */
+  align-items: center; /* Centraliza verticalmente o conteúdo dentro da div pai */
+  text-align: center; /* Alinha o texto ao centro horizontal */
+  text-shadow: -2px 4px 4px rgba(0, 0, 0, 1); /* Adiciona sombra no texto */
+  color: var(--cor-branco); /* Define a cor do texto dentro do elemento */
+}
+
+.texto-imagem h1 {
+  font-size: 2.3rem; /* Define o tamanho da fonte do elemento h1 */
+  margin-bottom: 10px; /* Adiciona uma margem abaixo do elemento */
+  max-width: 80vw; /* Define a largura máxima do elemento como 80% da largura da viewport */
+}
+
+.texto-imagem p {
+  font-size: 1rem; /* Define o tamanho da fonte do elemento p */
+  max-width: 80vw; /* Define a largura máxima do elemento como 80% da largura da viewport */
+}
+
+.div-noticia {
+  display: flex; /* Faz com que os elementos fiquem lado a lado */
+  flex-direction: column; /* Coloca os elementos em uma única coluna */
+  max-width: 800px; /* Define a largura máxima da div */
+  justify-content: center; /* Centraliza horizontalmente o conteúdo dentro da div pai */
+  text-align: justify; /* Justifica o texto dentro da div pai */
+  font-size: 1.5rem; /* Define o tamanho da fonte dentro da div pai */
+  padding-top: 40px; /* Adiciona uma margem acima da div */
+}
+
+.div-noticia h2 {
+  text-indent: 1.2rem; /* Define o recuo da primeira linha do elemento h2 */
+}
+
+.div-noticia p {
+  padding: 20px; /* Adiciona uma margem ao redor do parágrafo */
+  text-indent: 3rem; /* Define o recuo da primeira linha do parágrafo */
+}
+
+/* Estilo para o rodapé */
+footer {
+  background-color: var(--cor-primaria); /* cor de fundo do rodapé */
+  color: var(--cor-branco); /* cor do texto do rodapé */
+  padding: 20px; /* espaçamento interno do rodapé */
+  text-align: center; /* alinhamento do texto no centro */
+  position: relative; /* posição relativa */
+  top: 40px; /* deslocamento para baixo em relação ao elemento pai */
+  bottom: 0; /* espaço entre o rodapé e o elemento pai inferior */
+  width: 100%; /* largura do rodapé igual a 100% da largura do elemento pai */
+  height: 60px; /* altura do rodapé */
+}
+
+/* Estilo para o conteúdo do rodapé */
+.conteudo-rodape {
+  display: flex; /* define o conteúdo do rodapé como um container flexível */
+  justify-content: space-between; /* alinha os elementos filhos com espaço igual entre eles */
+  max-width: 800px; /* largura máxima do conteúdo do rodapé */
+  margin: 0 auto; /* centraliza o conteúdo horizontalmente */
+}

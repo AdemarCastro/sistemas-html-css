@@ -1,0 +1,151 @@
+/* Importação de fontes */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+/* Definição das variáveis de cor */
+:root {
+  --cor-primaria: #14141c;
+  --cor-secundaria: #04f823;
+  --cor-branco: #ffffff;
+  --cor-cinza-claro: #7c7c7c;
+  --cor-cinza-escuro: #5a5c5d;
+}
+
+/* Redefinição de estilização da página */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 52px;
+  background-color: var(--cor-primaria);
+}
+
+/* Estilo do corpo da página */
+body {
+  font-size: 16px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+/* Estilo da seção principal */
+main {
+  display: flex;
+  flex-direction: column; /* coloca os elementos um embaixo do outro */
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+/* Estilo da logo */
+.logo img {
+  height: 60px;
+}
+
+/* Estilo da navegação */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: var(--cor-secundaria);
+}
+
+/* Estilo da imagem */
+.imagem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3rem 0 0 3rem;
+}
+
+.imagem img {
+  max-height: 50vh;
+  max-width: 80vw;
+}
+
+#titulo-img {
+  color: var(--cor-branco);
+}
+
+.texto-imagem {
+  position: absolute; /* Para o texto ter uma posição absoluta, independente da div pai. */
+  display: block; /* Assim os elementos são alinhados em coluna */
+  justify-content: center; /* Centraliza os elementos da div */
+  align-items: center;
+  text-align: center;
+  padding: 0 0 0 15vw; /* Alinha o texto a imagem, confesso que precisei fazer dessa forma pois a imagem não é mãe da div texto-imagem, então tive que dar uma improvisada kk */
+  text-shadow: -2px 4px 4px rgba(0, 0, 0, 1);
+  color: var(--cor-branco);
+}
+
+.texto-imagem h1 {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  max-width: 50vw;
+}
+
+.texto-imagem p {
+  font-size: 1rem;
+  max-width: 50vw;
+}
+
+/* Estilo da seção de notícia */
+.div-noticia {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 3rem 2rem 0 2rem;
+}
+
+/* Estilo do título da notícia */
+.div-noticia h2 {
+  text-indent: 1.2rem;
+}
+
+/* Estilo do parágrafo da notícia */
+.div-noticia p {
+  padding: 20px;
+  text-indent: 3rem;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 100px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* Estilo do conteúdo do rodapé */
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}

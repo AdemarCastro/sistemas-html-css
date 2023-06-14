@@ -1,0 +1,189 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* Definição das variáveis de cor */
+/* Define as variáveis de cor utilizadas na página */
+:root {
+  --cor-background: #2B2B2B;
+  --cor-primaria: #EA2A70;
+  --cor-secundaria: #EE558D;
+  --cor-bege-rosado: #F6B093;
+  --cor-azul-escuro: #3C4E76;
+  --cor-branco: #FFFFFF;
+  --cor-cinza: #808080;
+}
+
+/* Redefinição de estilização da pagina */
+/* Remove a margem, padding e define a caixa de conteúdo para todos os elementos da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* Define um cabeçalho com display flex, justificado entre os elementos e alinhado ao centro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  max-width: 90vw;
+  border-radius: 25px;
+  margin: 30px auto 0 auto;
+  background-color: var(--cor-background);
+}
+
+body {
+  /* Define a fonte e tamanho para o corpo da página */
+  font-size: 16px;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  background: var(--cor-bege-rosado);
+}
+
+main {
+  /* Define um conteúdo principal com display flex, elementos empilhados verticalmente e centralizados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+/* Estilização de Menu */
+.logo img {
+  /* Define a altura da imagem da logo */
+  height: 60px;
+  border-radius: 50%;
+}
+
+nav ul {
+  /* Define uma lista não ordenada com display flex */
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  /* Define uma margem à direita para os elementos da lista */
+  margin-right: 20px;
+}
+
+nav a {
+  /* Define o estilo para os links de navegação */
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  /* Define a cor do hover para os links de navegação */
+  color: var(--cor-secundaria);
+}
+
+/* Estilização do botão de voltar para a Home */
+#buttom {
+  position: absolute;
+  margin: 2vh -85vw 0 0;
+}
+
+#buttom img{
+  width: 80px;
+}
+
+/* Exceção para aparelhos celulares e tablets */
+@media (max-width: 1600px) {
+  #buttom {
+    margin: 1vh -80vw 0 0;
+  }
+
+  #buttom img {
+    width: 60px;
+  }
+}
+/* Estilização das imagens na galeria */
+.imagem {
+  /* Define uma posição relativa para a div de imagem */
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  margin: 10vh 5vw 0 5vw;
+}
+
+.imagem img {
+  /* Define a largura da imagem para ocupar todo o espaço disponível */
+  width: 30vw;
+  max-width: 300px;
+  max-height: 165px;
+  border-radius: 25px;
+}
+
+/* Exceção para aparelhos celulares e tablets */
+@media (max-width: 1000px) {
+  .imagem {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagem img {
+    width: 80vw;
+    max-width: none;
+    max-height: none;
+  }
+
+}
+
+/* Estilização dos textos na galeria */
+.texto-imagem {
+  margin: 0 5vw 0 2vw;
+}
+
+.texto-imagem h2, .texto-imagem p {
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.texto-imagem h2 {
+  color: var(--cor-branco);
+  text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.texto-imagem p {
+  padding: 20px;
+}
+
+@media (max-width: 1000px) {
+  .texto-imagem {
+    margin: 5vh 5vw 0 2vw;
+  }
+}
+
+/* Estilização do Rodapé */
+footer {
+  margin: 5vh auto 30px auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 90vw;
+  height: 60px;
+  border-radius: 25px;
+  background-color: var(--cor-background);
+  color: var(--cor-branco);
+}
+
+.conteudo-rodape {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Formatação da Footer para aparelhos mobile e tablet */
+@media (max-width: 520px) {
+  footer {
+    height: 80px;
+  }
+
+  footer p{
+    width: 35vw;
+  }
+} 

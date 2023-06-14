@@ -1,0 +1,149 @@
+/* Importação de fontes */
+/* Importa as fontes Oswald regular e bold do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
+/* Definição das variáveis de cor */
+/* Define as variáveis de cor utilizadas na página */
+:root {
+  --cor-primaria: #14141c;
+  --cor-secundaria: #04f823;
+  --cor-branco: #ffffff;
+  --cor-cinza-claro: #7c7c7c;
+  --cor-cinza-escuro: #5a5c5d;
+}
+
+/* Redefinição de estilização da pagina */
+/* Remove a margem, padding e define a caixa de conteúdo para todos os elementos da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* Define um cabeçalho com display flex, justificado entre os elementos e alinhado ao centro */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--cor-primaria);
+}
+
+body {
+  /* Define a fonte e tamanho para o corpo da página */
+  font-size: 16px;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+main {
+  /* Define um conteúdo principal com display flex, elementos empilhados verticalmente e centralizados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+.logo img {
+  /* Define a altura da imagem da logo */
+  height: 60px;
+}
+
+nav ul {
+  /* Define uma lista não ordenada com display flex */
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  /* Define uma margem à direita para os elementos da lista */
+  margin-right: 20px;
+}
+
+nav a {
+  /* Define o estilo para os links de navegação */
+  text-decoration: none;
+  color: var(--cor-branco);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  /* Define a cor do hover para os links de navegação */
+  color: var(--cor-secundaria);
+}
+
+.imagem {
+  /* Define uma posição relativa para a div de imagem */
+  position: relative;
+}
+
+.imagem img {
+  /* Define a largura da imagem para ocupar todo o espaço disponível */
+  width: 100%;
+}
+
+#titulo-img {
+  /* Define a cor do título da imagem */
+  color: var(--cor-secundaria);
+}
+
+.texto-imagem {
+  /* Define a posição absoluta para o texto na div de imagem */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--cor-branco);
+}
+
+.texto-imagem h1 {
+  /* Define o tamanho e margem inferior para o título na div de imagem */
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.texto-imagem p {
+  /* Define o tamanho máximo para o parágrafo na div de imagem */
+  font-size: 1rem;
+  max-width: 100vw;
+}
+
+.div-noticia {
+  /* Define uma div para a notícia com display flex, elementos empilhados verticalmente e centralizados */
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: center;
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.div-noticia p {
+  /* Define o espaçamento e recuo para os parágrafos na div de notícia */
+  padding: 20px;
+  text-indent: 3rem;
+}
+
+footer {
+  /* Define o rodapé com fundo e cor de texto na cor primária */
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 40px;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+.conteudo-rodape {
+  /* Define um conteúdo para o rodapé com display flex, justificado entre os elementos e com largura máxima de 800 pixels */
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}

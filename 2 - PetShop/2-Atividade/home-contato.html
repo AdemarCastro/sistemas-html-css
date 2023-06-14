@@ -1,0 +1,67 @@
+<!-- Declara o tipo de  documento HTML que está sendo usado-->
+<!DOCTYPE html>
+<!-- Define o idioma do documento como português do Brasil -->
+<html lang="pt-BR">
+<head>
+  <!-- Define o conjunto de caracteres usados no documento como UTF-8 -->
+  <meta charset="UTF-8">
+  <!-- Define a versão do Internet Explorer que deve ser usado -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Define a largura do viewport e a escala inicial para dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Define o título da página exibido na aba do navegador -->
+  <title>My pet</title>
+  <!-- Importa o arquivo CSS responsável pelo estilo da página -->
+  <link rel="stylesheet" href="assets/css/home-contato.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="home-contato.html">
+        <img src="assets/img/logo.png" alt="Logo do site" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <!-- Cada item do menu é um link para uma página do site -->
+        <li><a href="home-contato.html" target="_blank">Home e Contato</a></li>
+        <li><a href="galeria.html" target="_blank">Galeria</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- O conteúdo principal do site -->
+  <main>
+    <div class="imagem">
+      <a href="galeria.html" target="_blank">
+        <img src="assets/img/homem-caes-gatos.jpg" alt="Imagem do site" />
+      </a>
+    </div>
+
+    <!-- Formulário de entrada de dados -->
+    <form>
+      <div id="texto-contatos">
+        <h2 id="titulo-contatos">Contato</h2>
+        <p id="descricao-contatos">Entre em contato com a gente que retornaremos via e-mail.</p>
+      </div>
+      
+      <input type="text" placeholder="Nome" id="nome" name="nome" required />
+      
+      <input type="email"  placeholder="Endereço de E-mail" id="email" name="email" required />
+
+      <input type="tel" placeholder="Celular" id="telefone" name="telefone" required />
+
+      <textarea placeholder="Digite sua mensagem aqui" id="mensagem" name="mensagem" required></textarea>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </main>
+  <!-- O rodapé do site, que contém informações de direitos autorais -->
+  <footer>
+    <div class="conteudo-rodape">
+      <p>Copyright © 2023, My pet</p>
+      <p>Todos os direitos reservados</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!-- Declara o tipo de documento HTML que está sendo usado -->
+<!DOCTYPE html>
+<!-- Define o idioma do documento como português do Brasil -->
+<html lang="pt-BR">
+  <head>
+    <!-- Define o conjunto de caracteres usados no documento como UTF-8 -->
+    <meta charset="UTF-8" />
+    <!-- Define a largura do viewport e a escala inicial para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define o título da página exibido na aba do navegador -->
+    <title>Game Show</title>
+    <!-- Importa o arquivo CSS responsável pelo estilo da página -->
+    <link rel="stylesheet" href="assets/css/faq.css" />
+  </head>
+
+  <body>
+    <!-- O cabeçalho do site, que contém a logo e o menu de navegação -->
+    <header>
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="Logo do site" />
+      </div>
+      <nav>
+        <ul>
+          <!-- Cada item do menu é um link para uma página do site -->
+          <li><a href="home.html" target="_blank">HOME</a></li>
+          <li><a href="quem_somos.html" target="_blank">QUEM SOMOS</a></li>
+          <li><a href="faq.html" target="_blank">FAQ</a></li>
+          <li><a href="blog.html" target="_blank">BLOG</a></li>
+          <li><a href="contatos.html" target="_blank">CONTATOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- O conteúdo principal do site -->
+    <main>
+      <!-- Lista não ordenada de perguntas frequentes -->
+      <ul>
+        <h2>Peguntas Frequentes</h2>
+        <!-- Cabeçalho da seção de perguntas frequentes -->
+        <li>
+          <!-- Início do item da lista de perguntas -->
+          <input type="checkbox" id="pergunta1" class="pergunta-checkbox" />
+          <!-- Checkbox da pergunta 1, com um ID e uma classe para fins de estilização -->
+          <label for="pergunta1" class="pergunta-label"
+            >1 - Quais tipos de jogos a Game Show produz?</label
+          >
+          <!-- Label associada ao checkbox da pergunta 1, contendo o texto da pergunta e uma classe para fins de estilização -->
+          <p class="resposta">
+            A Game Show produz jogos para computadores com C++. São diversos
+            tipos de jogos, desde jogos de ação e aventura até jogos de
+            estratégia e simulação.
+          </p>
+          <!-- Parágrafo com a resposta da pergunta 1, contendo uma classe para fins de estilização -->
+        </li>
+        <!-- Fim do item da lista de perguntas -->
+        <li>
+          <input type="checkbox" id="pergunta2" class="pergunta-checkbox" />
+          <label for="pergunta2" class="pergunta-label"
+            >2 - A Game Show utiliza alguma tecnologia específica em seus
+            jogos?</label
+          >
+          <p class="resposta">
+            Sim, a Game Show utiliza a tecnologia de Unreal Engine 5 em seus
+            jogos para produzir gráficos ainda mais impressionantes e
+            experiências mais imersivas para os jogadores.
+          </p>
+        </li>
+        <li>
+          <input type="checkbox" id="pergunta3" class="pergunta-checkbox" />
+          <label for="pergunta3" class="pergunta-label"
+            >3 - Como posso comprar os jogos da Game Show?</label
+          >
+          <p class="resposta">
+            Os jogos da Game Show podem ser adquiridos diretamente no site da
+            empresa, em plataformas de distribuição digital como a Steam e a
+            GOG, ou em lojas físicas de jogos.
+          </p>
+        </li>
+        <li>
+          <input type="checkbox" id="pergunta4" class="pergunta-checkbox" />
+          <label for="pergunta4" class="pergunta-label"
+            >4 - A Game Show oferece suporte técnico para seus jogos?</label
+          >
+          <p class="resposta">
+            Sim, a Game Show oferece suporte técnico para seus jogos, incluindo
+            suporte para problemas técnicos, dúvidas de jogabilidade e
+            atualizações de software.
+          </p>
+        </li>
+        <li>
+          <input type="checkbox" id="pergunta5" class="pergunta-checkbox" />
+          <label for="pergunta5" class="pergunta-label"
+            >5 - A Game Show oferece algum programa de fidelidade ou recompensas
+            para seus clientes?</label
+          >
+          <p class="resposta">
+            Sim, a Game Show oferece programas de fidelidade e recompensas para
+            seus clientes, incluindo descontos em novos jogos, acesso antecipado
+            a lançamentos e conteúdo exclusivo para membros.
+          </p>
+        </li>
+        <li>
+          <input type="checkbox" id="pergunta6" class="pergunta-checkbox" />
+          <label for="pergunta6" class="pergunta-label"
+            >6 - A Game Show tem planos para desenvolver jogos para
+            consoles?</label
+          >
+          <p class="resposta">
+            Sim, a Game Show tem planos para desenvolver jogos para consoles,
+            incluindo a próxima geração de consoles como o PlayStation 5 e o
+            Xbox Series X/S.
+          </p>
+        </li>
+        <li>
+          <input type="checkbox" id="pergunta7" class="pergunta-checkbox" />
+          <label for="pergunta7" class="pergunta-label"
+            >7 - A Game Show oferece opções de trabalho remoto?</label
+          >
+          <p class="resposta">
+            Sim, a Game Show desenvolveu opções de trabalho híbrido e remoto
+            para seus funcionários após a crise global de Covid-19, permitindo
+            que eles trabalhem de casa ou em um ambiente seguro no escritório.
+          </p>
+        </li>
+      </ul>
+    </main>
+
+    <!-- O rodapé do site, que contém informações de direitos autorais -->
+    <footer>
+      <div class="conteudo-rodape">
+        <p>Copyright © 2023, Game Show</p>
+        <p>Todos os direitos reservados</p>
+      </div>
+    </footer>
+  </body>
+</html>
