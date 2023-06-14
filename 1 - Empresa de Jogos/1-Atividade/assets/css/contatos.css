@@ -40,7 +40,7 @@ main {
   flex-direction: column; /* coloca os elementos um embaixo do outro */
   height: 100%;
   font-size: 1.5rem;
-  min-height: 83vh;
+  min-height: calc(100vh - 165px);
   max-width: 100vw;
 }
 
