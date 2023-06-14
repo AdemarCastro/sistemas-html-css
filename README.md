@@ -8,7 +8,7 @@ Empresa de Jogos
 
 PetShop
 
-<img src="src/assets/imagens/petshop.gif" width="70%" alt="Gif mostrando a execução do projeto.">
+<img src="assets/imagens/petshop.gif" width="70%" alt="Gif mostrando a execução do projeto.">
 
 ---
 
